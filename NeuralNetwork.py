@@ -26,5 +26,5 @@ def execute(path):
 	os.rename(path,path+str(prediction))
 	
 
-model = load_model('mnist_model.h5')
+model = load_model(os.path.expanduser('~/mnist_server/mnist_model.h5'))
 
