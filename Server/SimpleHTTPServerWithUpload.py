@@ -127,8 +127,8 @@ class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 out.close()
 				
                 #new code
-				execute(os.path.expanduser("~/mnist_server/Server/"+fn))
-				#end
+		execute(os.path.expanduser("~/mnist_server/Server/"+fn))
+		#end
 		
                 return (True, "File '%s' upload success!" % fn)
             else:
