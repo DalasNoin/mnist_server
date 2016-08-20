@@ -1,3 +1,4 @@
+
 sudo apt-get update
 
 echo Y | sudo apt-get install python-pip
@@ -9,9 +10,9 @@ sudo pip install --upgrade $TF_BINARY_URL
 echo Y | sudo apt-get install python-numpy python-scipy pyyaml h5py
 
 sudo pip install keras
-sudo cd ~/.keras
-sudo python ~/mnist_server/changename.py
-cd ~/mnist_server
+
+sudo rm ~/.keras/keras.json
+sudo mv keras.json ~/.keras/keras.json
 
 sudo pip install cython
 echo Y | sudo apt-get install libhdf5-dev
@@ -19,6 +20,6 @@ sudo pip install h5py
 
 sudo pip install Pillow
 
-sudo cd ~/mnist_server/Server
+cd ~/mnist_server/Server
 nohup sudo python SimpleHTTPServerWithUpload.py 80 &
 disown
