@@ -9,4 +9,3 @@ for background execution:
 	ps aux
 	(force kill)
 	sudo kill -9 {PID}
-
