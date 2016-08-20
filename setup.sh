@@ -9,8 +9,8 @@ sudo pip install --upgrade $TF_BINARY_URL
 echo Y | sudo apt-get install python-numpy python-scipy pyyaml h5py
 
 sudo pip install keras
-cd ~/.keras
-sudo python changename.py
+sudo cd ~/.keras
+sudo python ~/mnist_server/changename.py
 cd ~/mnist_server
 
 sudo pip install cython
@@ -19,6 +19,6 @@ sudo pip install h5py
 
 sudo pip install Pillow
 
-cd ~/mnist_server/Server
+sudo cd ~/mnist_server/Server
 nohup sudo python SimpleHTTPServerWithUpload.py 80 &
 disown
