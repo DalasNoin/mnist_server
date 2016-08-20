@@ -16,5 +16,6 @@ sudo pip install h5py
 
 sudo pip install Pillow
 
+cd ./Server
 nohup sudo python SimpleHTTPServerWithUpload.py 80 &
 disown
